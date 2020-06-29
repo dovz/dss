@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593442828464
+    "lastModifiedOn": 1593442900779
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,8 +56,17 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "X",
+        "type": "bigint"
+      },
+      {
+        "name": "Y",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [

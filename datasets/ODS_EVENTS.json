@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593442787630
+    "lastModifiedOn": 1593765126163
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,7 +47,7 @@
     "mode": "query",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "query": "select * \nfrom \"DOV_TEST\".\"SCHEMA_1\".\"TABLE_1\"",
+    "query": "select * \nfrom \"SNOWFLAKE_SAMPLE_DATA\".\"TPCDS_SF100TCL\".\"ITEM\"",
     "table": "ODS_EVENTS",
     "schema": "ODS",
     "tableCreationMode": "auto",

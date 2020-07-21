@@ -1,0 +1,266 @@
+{
+  "type": "Snowflake",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1595355123374
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1595355123361
+  },
+  "tags": [],
+  "params": {
+    "connection": "vbi_sf",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_ods_events_filtered",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "I_ITEM_SK",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_ITEM_ID",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 16
+      },
+      {
+        "name": "I_REC_START_DATE",
+        "type": "date",
+        "originalType": "DATE",
+        "timestampNoTzAsDate": true
+      },
+      {
+        "name": "I_REC_END_DATE",
+        "type": "date",
+        "originalType": "DATE",
+        "timestampNoTzAsDate": true
+      },
+      {
+        "name": "I_ITEM_DESC",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 200
+      },
+      {
+        "name": "I_CURRENT_PRICE",
+        "type": "double",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_WHOLESALE_COST",
+        "type": "double",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_BRAND_ID",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_BRAND",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 50
+      },
+      {
+        "name": "I_CLASS_ID",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_CLASS",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 50
+      },
+      {
+        "name": "I_CATEGORY_ID",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_CATEGORY",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 50
+      },
+      {
+        "name": "I_MANUFACT_ID",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_MANUFACT",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 50
+      },
+      {
+        "name": "I_SIZE",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 20
+      },
+      {
+        "name": "I_FORMULATION",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 20
+      },
+      {
+        "name": "I_COLOR",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 20
+      },
+      {
+        "name": "I_UNITS",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 10
+      },
+      {
+        "name": "I_CONTAINER",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 10
+      },
+      {
+        "name": "I_MANAGER_ID",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "I_PRODUCT_NAME",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 50
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

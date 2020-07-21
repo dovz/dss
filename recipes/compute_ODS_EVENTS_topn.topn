@@ -1,0 +1,74 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "firstRows": 1,
+  "keys": [],
+  "computedColumns": [],
+  "retrievedColumns": [
+    "I_ITEM_SK",
+    "I_ITEM_ID",
+    "I_REC_START_DATE",
+    "I_REC_END_DATE",
+    "I_ITEM_DESC",
+    "I_CURRENT_PRICE",
+    "I_WHOLESALE_COST",
+    "I_BRAND_ID",
+    "I_BRAND",
+    "I_CLASS_ID",
+    "I_CLASS",
+    "I_CATEGORY_ID",
+    "I_CATEGORY",
+    "I_MANUFACT_ID",
+    "I_MANUFACT",
+    "I_SIZE",
+    "I_FORMULATION",
+    "I_COLOR",
+    "I_UNITS",
+    "I_CONTAINER",
+    "I_MANAGER_ID",
+    "I_PRODUCT_NAME"
+  ],
+  "lastRows": 0,
+  "duplicateCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "rank": false,
+  "denseRank": false,
+  "orders": [],
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
+}

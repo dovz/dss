@@ -25,8 +25,29 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 4204163.0,
+        "max": 4204200.0,
+        "booleanMode": "AND",
+        "columns": [
+          "L_ORDERKEY"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +55,24 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "L_SHIPMODE": 100,
+    "L_TAX": 100,
+    "L_EXTENDEDPRICE": 128,
+    "L_COMMITDATE": 183,
+    "L_ORDERKEY": 120,
+    "L_RETURNFLAG": 105,
+    "L_LINESTATUS": 105,
+    "L_RECEIPTDATE": 183,
+    "L_PARTKEY": 100,
+    "L_LINENUMBER": 105,
+    "L_SHIPDATE": 183,
+    "L_SHIPINSTRUCT": 148,
+    "L_SUPPKEY": 100,
+    "L_DISCOUNT": 100,
+    "L_COMMENT": 300,
+    "L_QUANTITY": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

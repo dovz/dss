@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595357689157
+    "lastModifiedOn": 1595358073734
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,8 +56,77 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "L_ORDERKEY",
+        "type": "bigint"
+      },
+      {
+        "name": "L_PARTKEY",
+        "type": "bigint"
+      },
+      {
+        "name": "L_SUPPKEY",
+        "type": "bigint"
+      },
+      {
+        "name": "L_LINENUMBER",
+        "type": "bigint"
+      },
+      {
+        "name": "L_QUANTITY",
+        "type": "double"
+      },
+      {
+        "name": "L_EXTENDEDPRICE",
+        "type": "double"
+      },
+      {
+        "name": "L_DISCOUNT",
+        "type": "double"
+      },
+      {
+        "name": "L_TAX",
+        "type": "double"
+      },
+      {
+        "name": "L_RETURNFLAG",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "L_LINESTATUS",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "L_SHIPDATE",
+        "type": "date"
+      },
+      {
+        "name": "L_COMMITDATE",
+        "type": "date"
+      },
+      {
+        "name": "L_RECEIPTDATE",
+        "type": "date"
+      },
+      {
+        "name": "L_SHIPINSTRUCT",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "L_SHIPMODE",
+        "type": "bigint"
+      },
+      {
+        "name": "L_COMMENT",
+        "type": "string",
+        "maxLength": 4194304
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [

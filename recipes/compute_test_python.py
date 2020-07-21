@@ -14,7 +14,7 @@ lineitem_prepared_df = lineitem_prepared.get_dataframe()
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
 
 test_python_df = lineitem_prepared_df # For this sample code, simply copy input to output
-
+x = AAA.test_function(5)
 
 # Write recipe outputs
 test_python = dataiku.Dataset("test_python")

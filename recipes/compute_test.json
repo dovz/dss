@@ -22,18 +22,18 @@
     "main": {
       "items": [
         {
-          "ref": "test",
+          "ref": "dummy_dataset",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595448911876
+    "lastModifiedOn": 1595449243795
   },
   "creationTag": {
     "versionNumber": 0,

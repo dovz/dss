@@ -7,6 +7,7 @@ from dataiku import pandasutils as pdu
 lineitem_prepared = dataiku.Dataset("LINEITEM_prepared")
 lineitem_prepared_df = lineitem_prepared.get_dataframe()
 
+#set column_list variable
 project_handle = dataiku.api_client().get_project(dataiku.default_project_key())
 vars = project_handle.get_variables()
 new_val = 'L_PARTKEY,L_LINENUMBER,L_QUANTITY'

@@ -1,2 +1,2 @@
-SELECT *
-  FROM "TEST_dummy"
+SELECT SELECT '${column_list}'
+FROM "TEST_dummy"

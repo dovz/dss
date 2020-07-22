@@ -1,17 +1,10 @@
-# -*- coding: utf-8 -*-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 import dataiku
-import pandas as pd, numpy as np
-from dataiku import pandasutils as pdu
 
 
-
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
-test_df = ... # Compute a Pandas dataframe to write into test
-
-
-# Write recipe outputs
-test = dataiku.Dataset("test")
-test.write_with_schema(test_df)
+project_handle = dataiku.api_client().get_project(dataiku.default_project_key())
+vars = project_handle.get_variables()
+new_val = 'L_PARTKEY,L_LINENUMBER,L_QUANTITY'
+vars['standard']['column_list'] = new_val
+project_handle.set_variables(vars)
+print(vars)

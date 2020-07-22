@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595450081634
+    "lastModifiedOn": 1595450141483
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,10 +58,19 @@
   "schema": {
     "columns": [
       {
-        "name": "\u0027L_PARTKEY,L_LINENUMBER,L_QUANTITY\u0027",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 33
+        "name": "L_PARTKEY",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "L_LINENUMBER",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "L_QUANTITY",
+        "type": "double",
+        "originalType": "DOUBLE"
       }
     ],
     "userModified": true

@@ -4,7 +4,8 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "python3"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -28,11 +29,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595447914584
+    "lastModifiedOn": 1595447939210
   },
   "creationTag": {
     "versionNumber": 0,

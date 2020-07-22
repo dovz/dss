@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595450009239
+    "lastModifiedOn": 1595450081634
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,14 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "\u0027L_PARTKEY,L_LINENUMBER,L_QUANTITY\u0027",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 33
+      }
+    ],
     "userModified": true
   },
   "metrics": {

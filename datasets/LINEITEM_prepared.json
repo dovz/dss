@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595357605094
+    "lastModifiedOn": 1595767782382
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,6 +50,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_lineitem_prepared",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "select \u00275\u0027",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,

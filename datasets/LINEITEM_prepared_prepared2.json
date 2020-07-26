@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595791522019
+    "lastModifiedOn": 1595791757666
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_lineitem_prepared_prepared2",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "drop table TEST_lineitem_prepared_prepared2;\ncreate or replace TABLE \"TEST_lineitem_prepared_prepared2\" (\n\tL_ORDERKEY NUMBER(38,0),\n\tL_PARTKEY NUMBER(38,0),\n\tL_SUPPKEY NUMBER(38,0),\n\tL_LINENUMBER NUMBER(38,0),\n\tL_QUANTITY FLOAT,\n\tL_EXTENDEDPRICE FLOAT,\n\tL_DISCOUNT FLOAT,\n\tL_TAX FLOAT,\n\tL_RETURNFLAG VARCHAR(1),\n\tL_LINESTATUS VARCHAR(1),\n\tL_SHIPDATE TIMESTAMP_TZ(9),\n\t\"L_SHIPDATE_year\" NUMBER(38,0),\n\t\"L_SHIPDATE_month\" NUMBER(38,0),\n\t\"L_SHIPDATE_day\" NUMBER(38,0),\n\tL_COMMITDATE TIMESTAMP_TZ(9),\n\tL_RECEIPTDATE TIMESTAMP_TZ(9),\n\tL_SHIPINSTRUCT VARCHAR(25),\n\tL_SHIPMODE NUMBER(38,0),\n\tL_COMMENT VARCHAR(55)\n);",
+    "customPreWriteStatements": "drop table  \"TEST_lineitem_prepared_prepared2\";\ncreate or replace TABLE \"TEST_lineitem_prepared_prepared2\" (\n\tL_ORDERKEY NUMBER(38,0),\n\tL_PARTKEY NUMBER(38,0),\n\tL_SUPPKEY NUMBER(38,0),\n\tL_LINENUMBER NUMBER(38,0),\n\tL_QUANTITY FLOAT,\n\tL_EXTENDEDPRICE FLOAT,\n\tL_DISCOUNT FLOAT,\n\tL_TAX FLOAT,\n\tL_RETURNFLAG VARCHAR(1),\n\tL_LINESTATUS VARCHAR(1),\n\tL_SHIPDATE TIMESTAMP_TZ(9),\n\t\"L_SHIPDATE_year\" NUMBER(38,0),\n\t\"L_SHIPDATE_month\" NUMBER(38,0),\n\t\"L_SHIPDATE_day\" NUMBER(38,0),\n\tL_COMMITDATE TIMESTAMP_TZ(9),\n\tL_RECEIPTDATE TIMESTAMP_TZ(9),\n\tL_SHIPINSTRUCT VARCHAR(25),\n\tL_SHIPMODE NUMBER(38,0),\n\tL_COMMENT VARCHAR(55)\n);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,

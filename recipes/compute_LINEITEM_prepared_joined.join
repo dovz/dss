@@ -6,84 +6,189 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "L_ORDERKEY",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "L_ORDERKEY",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "L_PARTKEY",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "L_PARTKEY",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "L_SUPPKEY",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "L_SUPPKEY",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "L_LINENUMBER",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "L_LINENUMBER",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "L_QUANTITY",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "L_QUANTITY",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "L_ORDERKEY",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_PARTKEY",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_SUPPKEY",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_LINENUMBER",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_QUANTITY",
+      "type": "double",
       "table": 0
     },
     {
       "name": "L_EXTENDEDPRICE",
+      "type": "double",
       "table": 0
     },
     {
       "name": "L_DISCOUNT",
+      "type": "double",
       "table": 0
     },
     {
       "name": "L_TAX",
+      "type": "double",
       "table": 0
     },
     {
       "name": "L_RETURNFLAG",
+      "type": "string",
       "table": 0
     },
     {
       "name": "L_LINESTATUS",
+      "type": "string",
       "table": 0
     },
     {
       "name": "L_SHIPDATE",
+      "type": "date",
       "table": 0
     },
     {
       "name": "L_SHIPDATE_year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_SHIPDATE_month",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_SHIPDATE_day",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_COMMITDATE",
+      "type": "date",
       "table": 0
     },
     {
       "name": "L_RECEIPTDATE",
+      "type": "date",
       "table": 0
     },
     {
       "name": "L_SHIPINSTRUCT",
+      "type": "string",
       "table": 0
     },
     {
       "name": "L_SHIPMODE",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "L_COMMENT",
+      "type": "string",
       "table": 0
     }
   ],
@@ -141,5 +246,99 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "L_ORDERKEY",
+            "type": "bigint"
+          },
+          {
+            "name": "L_PARTKEY",
+            "type": "bigint"
+          },
+          {
+            "name": "L_SUPPKEY",
+            "type": "bigint"
+          },
+          {
+            "name": "L_LINENUMBER",
+            "type": "bigint"
+          },
+          {
+            "name": "L_QUANTITY",
+            "type": "double"
+          },
+          {
+            "name": "L_EXTENDEDPRICE",
+            "type": "double"
+          },
+          {
+            "name": "L_DISCOUNT",
+            "type": "double"
+          },
+          {
+            "name": "L_TAX",
+            "type": "double"
+          },
+          {
+            "name": "L_RETURNFLAG",
+            "type": "string",
+            "maxLength": 1
+          },
+          {
+            "name": "L_LINESTATUS",
+            "type": "string",
+            "maxLength": 1
+          },
+          {
+            "timestampNoTzAsDate": true,
+            "name": "L_SHIPDATE",
+            "type": "date"
+          },
+          {
+            "name": "L_SHIPDATE_year",
+            "type": "bigint"
+          },
+          {
+            "name": "L_SHIPDATE_month",
+            "type": "bigint"
+          },
+          {
+            "name": "L_SHIPDATE_day",
+            "type": "bigint"
+          },
+          {
+            "timestampNoTzAsDate": true,
+            "name": "L_COMMITDATE",
+            "type": "date"
+          },
+          {
+            "timestampNoTzAsDate": true,
+            "name": "L_RECEIPTDATE",
+            "type": "date"
+          },
+          {
+            "name": "L_SHIPINSTRUCT",
+            "type": "string",
+            "maxLength": 25
+          },
+          {
+            "name": "L_SHIPMODE",
+            "type": "bigint",
+            "maxLength": 10
+          },
+          {
+            "name": "L_COMMENT",
+            "type": "string",
+            "maxLength": 44
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }

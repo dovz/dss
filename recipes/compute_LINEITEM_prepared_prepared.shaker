@@ -29,7 +29,22 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "L_COMMITDATE_month",
+        "outYearColumn": "L_COMMITDATE_year",
+        "column": "L_COMMITDATE",
+        "timezone_id": "UTC",
+        "outDayColumn": "L_COMMITDATE_day"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -42,6 +57,8 @@
     "L_TAX": 100,
     "L_EXTENDEDPRICE": 128,
     "L_COMMITDATE": 183,
+    "L_COMMITDATE_year": 143,
+    "L_COMMITDATE_month": 150,
     "L_ORDERKEY": 120,
     "L_RETURNFLAG": 105,
     "L_LINESTATUS": 105,
@@ -52,6 +69,7 @@
     "L_SHIPINSTRUCT": 148,
     "L_SUPPKEY": 100,
     "L_DISCOUNT": 100,
+    "L_COMMITDATE_day": 135,
     "L_COMMENT": 300,
     "L_QUANTITY": 100
   },

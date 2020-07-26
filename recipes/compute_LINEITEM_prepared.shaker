@@ -31,7 +31,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnNumericalRange",
@@ -46,6 +46,20 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "L_SHIPDATE_month",
+        "outYearColumn": "L_SHIPDATE_year",
+        "column": "L_SHIPDATE",
+        "timezone_id": "UTC",
+        "outDayColumn": "L_SHIPDATE_day"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -57,6 +71,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "L_SHIPMODE": 100,
+    "L_SHIPDATE_month": 135,
     "L_TAX": 100,
     "L_EXTENDEDPRICE": 128,
     "L_COMMITDATE": 183,
@@ -65,11 +80,13 @@
     "L_LINESTATUS": 105,
     "L_RECEIPTDATE": 183,
     "L_PARTKEY": 100,
+    "L_SHIPDATE_day": 120,
     "L_LINENUMBER": 105,
     "L_SHIPDATE": 183,
     "L_SHIPINSTRUCT": 148,
     "L_SUPPKEY": 100,
     "L_DISCOUNT": 100,
+    "L_SHIPDATE_year": 128,
     "L_COMMENT": 300,
     "L_QUANTITY": 100
   },

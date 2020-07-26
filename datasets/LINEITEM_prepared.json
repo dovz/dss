@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595767782382
+    "lastModifiedOn": 1595767839102
   },
   "creationTag": {
     "versionNumber": 0,
@@ -104,6 +104,18 @@
         "name": "L_SHIPDATE",
         "type": "date",
         "timestampNoTzAsDate": true
+      },
+      {
+        "name": "L_SHIPDATE_year",
+        "type": "bigint"
+      },
+      {
+        "name": "L_SHIPDATE_month",
+        "type": "bigint"
+      },
+      {
+        "name": "L_SHIPDATE_day",
+        "type": "bigint"
       },
       {
         "name": "L_COMMITDATE",

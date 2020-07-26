@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595797461375
+    "lastModifiedOn": 1595797599569
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,7 +97,7 @@
       },
       {
         "name": "L_LINESTATUS",
-        "type": "boolean",
+        "type": "string",
         "maxLength": 1
       },
       {

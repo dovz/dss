@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595767052888
+    "lastModifiedOn": 1595767160874
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_lineitem_prepared_prepared",
     "tableCreationMode": "custom",
-    "customCreateStatement": "CREATE TABLE \"TEST_lineitem_prepared_prepared\" (\n\t\"L_ORDERKEY\" bigint,\n\t\"L_PARTKEY\" bigint,\n\t\"L_SUPPKEY\" bigint,\n\t\"L_LINENUMBER\" bigint,\n\t\"L_QUANTITY\" double,\n\t\"L_EXTENDEDPRICE\" double,\n\t\"L_DISCOUNT\" double,\n\t\"L_TAX\" double,\n\t\"L_RETURNFLAG\" varchar(1),\n\t\"L_LINESTATUS\" boolean,\n\t\"L_SHIPDATE\" timestamptz,\n\t\"L_COMMITDATE\" timestamptz,\n\t\"L_RECEIPTDATE\" timestamptz,\n\t\"L_SHIPINSTRUCT\" varchar(25),\n\t\"L_SHIPMODE\" bigint,\n\t\"L_COMMENT\" varchar(44)\n)\ncluster by (L_ORDERKEY)",
+    "customCreateStatement": "CREATE TABLE \"TEST_lineitem_prepared_prepared\" (\n\t\"L_ORDERKEY\" bigint,\n\t\"L_PARTKEY\" bigint,\n\t\"L_SUPPKEY\" bigint,\n\t\"L_LINENUMBER\" bigint,\n\t\"L_QUANTITY\" double,\n\t\"L_EXTENDEDPRICE\" double,\n\t\"L_DISCOUNT\" double,\n\t\"L_TAX\" double,\n\t\"L_RETURNFLAG\" varchar(1),\n\t\"L_LINESTATUS\" varchar(1),\n\t\"L_SHIPDATE\" timestamptz,\n\t\"L_COMMITDATE\" timestamptz,\n\t\"L_RECEIPTDATE\" timestamptz,\n\t\"L_SHIPINSTRUCT\" varchar(25),\n\t\"L_SHIPMODE\" bigint,\n\t\"L_COMMENT\" varchar(44)\n)\ncluster by (L_ORDERKEY)",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,

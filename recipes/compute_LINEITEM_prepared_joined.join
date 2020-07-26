@@ -1,0 +1,145 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "L_ORDERKEY",
+      "table": 0
+    },
+    {
+      "name": "L_PARTKEY",
+      "table": 0
+    },
+    {
+      "name": "L_SUPPKEY",
+      "table": 0
+    },
+    {
+      "name": "L_LINENUMBER",
+      "table": 0
+    },
+    {
+      "name": "L_QUANTITY",
+      "table": 0
+    },
+    {
+      "name": "L_EXTENDEDPRICE",
+      "table": 0
+    },
+    {
+      "name": "L_DISCOUNT",
+      "table": 0
+    },
+    {
+      "name": "L_TAX",
+      "table": 0
+    },
+    {
+      "name": "L_RETURNFLAG",
+      "table": 0
+    },
+    {
+      "name": "L_LINESTATUS",
+      "table": 0
+    },
+    {
+      "name": "L_SHIPDATE",
+      "table": 0
+    },
+    {
+      "name": "L_SHIPDATE_year",
+      "table": 0
+    },
+    {
+      "name": "L_SHIPDATE_month",
+      "table": 0
+    },
+    {
+      "name": "L_SHIPDATE_day",
+      "table": 0
+    },
+    {
+      "name": "L_COMMITDATE",
+      "table": 0
+    },
+    {
+      "name": "L_RECEIPTDATE",
+      "table": 0
+    },
+    {
+      "name": "L_SHIPINSTRUCT",
+      "table": 0
+    },
+    {
+      "name": "L_SHIPMODE",
+      "table": 0
+    },
+    {
+      "name": "L_COMMENT",
+      "table": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}

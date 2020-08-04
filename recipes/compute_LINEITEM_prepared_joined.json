@@ -16,7 +16,13 @@
         },
         {
           "ref": "LINEITEM",
-          "deps": []
+          "deps": [
+            {
+              "idim": "L_LINENUMBER",
+              "func": "all_available",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -32,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595797120593
+    "lastModifiedOn": 1596529393728
   },
   "creationTag": {
     "versionNumber": 0,

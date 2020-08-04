@@ -55,7 +55,15 @@
       "items": [
         {
           "ref": "LINEITEM",
-          "deps": []
+          "deps": [
+            {
+              "out": "LINEITEM_copy2",
+              "idim": "L_LINENUMBER",
+              "odim": "L_LINENUMBER",
+              "func": "equals",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -71,11 +79,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596528161387
+    "lastModifiedOn": 1596529393682
   },
   "creationTag": {
     "versionNumber": 0,

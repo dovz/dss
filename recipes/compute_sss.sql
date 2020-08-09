@@ -1,1 +1,1 @@
- SELECT * FROM  mysql.general_log  WHERE command_type ='Query' LIMIT total;
+ SELECT * FROM  mysql.general_log  WHERE command_type ='Query' LIMIT 1000;

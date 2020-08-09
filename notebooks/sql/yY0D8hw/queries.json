@@ -49,10 +49,10 @@
         "mode": "SQL",
         "id": "3a1zPxec5Pp6",
         "runOn": 1596987687346,
-        "runIn": 792,
+        "runIn": 858,
         "runBy": "admin",
         "connection": "mysql",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "7JkHZrpo",
         "hash": "d061b7792c0ee2f05bcf41794041eb93",
         "querySettings": {

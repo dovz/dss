@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "9yl98duxmyk": [
+      {
+        "mode": "SQL",
+        "id": "Le76UUBzmioD",
+        "runOn": 1596987666594,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "mysql",
+        "state": "RUNNING",
+        "futureId": "KsIvSSdd",
+        "hash": "c5f2864b37b348d4a462cda6d1431ee1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select *\nfrom `TEST_lineitem_topn`\nlimit 100;",
+        "expandedSql": "select *\nfrom `TEST_lineitem_topn`\nlimit 100;"
+      }
+    ]
+  }
+}

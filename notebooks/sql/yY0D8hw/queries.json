@@ -44,6 +44,28 @@
         },
         "sql": "select count(*)\nfrom `TEST_lineitem_topn`\nlimit 100;",
         "expandedSql": "select count(*)\nfrom `TEST_lineitem_topn`\nlimit 100;"
+      },
+      {
+        "mode": "SQL",
+        "id": "3a1zPxec5Pp6",
+        "runOn": 1596987687346,
+        "runIn": 792,
+        "runBy": "admin",
+        "connection": "mysql",
+        "state": "RUNNING",
+        "futureId": "7JkHZrpo",
+        "hash": "d061b7792c0ee2f05bcf41794041eb93",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select cast(count(*) as bigint)\nfrom `TEST_lineitem_topn`\nlimit 100;",
+        "expandedSql": "select cast(count(*) as bigint)\nfrom `TEST_lineitem_topn`\nlimit 100;"
       }
     ]
   }

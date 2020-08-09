@@ -1,14 +1,28 @@
 {
   "connection": "mysql",
   "name": "admin\u0027s notebook on mysql",
-  "cells": [],
+  "cells": [
+    {
+      "id": "9yl98duxmyk",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596987574723
+    "lastModifiedOn": 1596987578223
   },
   "creationTag": {
     "versionNumber": 0,

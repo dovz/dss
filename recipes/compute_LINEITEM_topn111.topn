@@ -3,7 +3,7 @@
     "distinct": false,
     "enabled": false
   },
-  "firstRows": 1,
+  "firstRows": 100,
   "keys": [],
   "computedColumns": [],
   "retrievedColumns": [
@@ -62,7 +62,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "L_PARTKEY",
+      "desc": false
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }

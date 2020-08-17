@@ -1,0 +1,68 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "firstRows": 1,
+  "keys": [],
+  "computedColumns": [],
+  "retrievedColumns": [
+    "L_ORDERKEY",
+    "L_PARTKEY",
+    "L_SUPPKEY",
+    "L_LINENUMBER",
+    "L_QUANTITY",
+    "L_EXTENDEDPRICE",
+    "L_DISCOUNT",
+    "L_TAX",
+    "L_RETURNFLAG",
+    "L_LINESTATUS",
+    "L_SHIPDATE",
+    "L_COMMITDATE",
+    "L_RECEIPTDATE",
+    "L_SHIPINSTRUCT",
+    "L_SHIPMODE",
+    "L_COMMENT"
+  ],
+  "lastRows": 0,
+  "duplicateCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "rank": false,
+  "denseRank": false,
+  "orders": [],
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
+}

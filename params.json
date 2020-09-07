@@ -52,8 +52,9 @@
     },
     "codeEnvs": {
       "python": {
-        "useBuiltinEnv": true,
-        "preventOverride": false
+        "useBuiltinEnv": false,
+        "preventOverride": false,
+        "envName": "python3"
       },
       "r": {
         "useBuiltinEnv": true,
@@ -170,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1599074359981
+    "lastModifiedOn": 1599469770526
   },
   "creationTag": {
     "versionNumber": 0,
